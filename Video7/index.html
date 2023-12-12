@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Forms - Lets learn it</title>
+    </head>
+    <body>
+        <form action="/submit.php" method="post">
+
+            <div>
+                <label for="username">Enter your username</label>
+                <input type="text" id="username" name="username"
+                    placeholder="Enter your name">
+            </div>
+
+            <div>
+                <input type="radio" id="male" name="gender" value="male"
+                    autofocus>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+
+                <!-- if name attribute values are same then only one radio button can be selected at a time -->
+            </div>
+
+            <div>
+                <label for="comment">Enter your comment here </label>
+                <br>
+                <textarea name="comment" id cols="30" rows="10"></textarea>
+            </div>
+
+            <div>
+                <select name="fruits" id>
+                    <option value="apple">APPLE</option>
+                    <option value="mango">Mango</option>
+                    <option value="banana">Banana</option>
+                    <option value="guava">Guava</option>
+                </select>
+            </div>
+        </form>
+
+    </body>
+</html>
