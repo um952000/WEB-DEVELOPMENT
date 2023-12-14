@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Selector</title>
+
+        <style>
+                 /* Element selector */
+            /* div{
+                background-color: red;
+            } */
+
+         
+               /* class selector */
+
+            /* .red{
+                background-color: red;
+            } */
+
+           /* Id Selector */
+          
+             /* #green{
+
+                background-color: greenyellow;
+             }  */
+
+             /* child selector :- will be applied only when p is direct child of div */
+
+             div > p{
+
+                color: blue;
+                background-color: brown;
+             }
+
+             /* Descendent selector :- will be applied when p lies inside the div no matter in which sense.... */
+
+             div p{
+
+                color: blue;
+                background-color: brown;
+             }
+
+             /* Universal selectors */
+
+
+             *{
+                 margin: 10px;
+             }
+
+             /* Pseudo selector */
+
+             a:visited{
+                color: yellow;
+             }
+
+             a:link{
+
+                color: green;
+             }
+ 
+       a:active{
+
+          background-color:  red;
+       }
+
+       a:hover{
+
+         background-color: green;
+       }
+/* 
+       parent(main) ka first child p ke liye apply hoga ye selector  */
+
+
+            p:first-child{
+
+                background-color: rgb(238, 255, 1);
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <main class="one">
+            <p>I am first</p>
+            <p>I am second</p>
+        </main>
+
+        <div id="green" class="red">I am div</div>
+        <div>I am another div</div>
+        <div id="green">I am third div</div>
+
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum,
+                molestias?</p></div>
+
+        <div>I am a div
+            <article>
+                <p>I am a para...</p>
+            </article>
+        </div>
+
+        <a href="https://www.google.com">Go to Google</a>
+        <a href="https://www.quora.com">Go to Quora</a>
+
+    </body>
+</html>
