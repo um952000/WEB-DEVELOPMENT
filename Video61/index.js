@@ -30,7 +30,7 @@ let obj = {
 
 if (random > 0.1) {
     // Perform correct calculation
-    console.log(`The result is ${a} ${c} ${b}`)
+    console.log(`The result is ${a} ${c} ${b} = ${eval(`${a} ${c} ${b}`)}`)
     alert(`The result is ${eval(`${a} ${c} ${b}`)}`)
     
 }
