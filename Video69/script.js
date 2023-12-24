@@ -1,7 +1,8 @@
 let a = 7
 
 function factorial(number){
-   let arr = Array.from(Array(number+1).keys())
+   let arr = Array.from(Array(number+1).keys()) // creating an array
+   console.log(arr);
    let c = arr.slice(1,).reduce((a, b)=> a*b )
    return c
 }
