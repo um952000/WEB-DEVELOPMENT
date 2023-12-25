@@ -9,12 +9,10 @@ function getRandomColor() {
   
     return color;
   }
-  
-  // Example usage
-  var randomColor = getRandomColor();
-  console.log(randomColor);
+
 
  
 document.querySelectorAll(".box").forEach(e =>{
-    e.style.backgroundColor = randomColor;
+    e.style.backgroundColor = getRandomColor();
+    e.style.color = getRandomColor()
 })
