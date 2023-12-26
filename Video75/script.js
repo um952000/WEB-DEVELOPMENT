@@ -4,7 +4,7 @@ console.log("Rohan is a hecker")
 
 setTimeout(() => {
     console.log("I am inside settimeout")
-}, 0);
+}, 5000);
 
 setTimeout(() => {
     console.log("I am inside settimeout 2")
@@ -22,6 +22,8 @@ const callback = (arg, fn) => {
 }
 
 const loadScript = (src, callback) => {
+    
+    console.log("firstFunction")
     let sc = document.createElement("script");
     sc.src = src;
     sc.onload = callback("Harry", fn);

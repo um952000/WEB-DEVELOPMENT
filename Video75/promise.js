@@ -1,4 +1,4 @@
-console.log('This is Promises');
+ console.log('This is Promises');
 
 let prom1 = new Promise((resolve, reject) => {
     let a = Math.random();

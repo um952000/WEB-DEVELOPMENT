@@ -30,6 +30,8 @@ async function getData() {
     return data
 }
 
+
+
 async function main(){
     console.log("Loading modules")
 
@@ -47,10 +49,10 @@ async function main(){
 
 }
 
-main()
+main() // calling main function
 
  
-
+// first method without async await
 // data.then((v) => { 
 //     console.log(data)
 
