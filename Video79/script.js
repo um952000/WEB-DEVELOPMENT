@@ -1,17 +1,17 @@
-let a = prompt("Enter the first number")
+// let a = prompt("Enter the first number")
 
-let b = prompt("Enter the second number")
+// let b = prompt("Enter the second number")
 
-if(isNaN(a) || isNaN(b)){
+// if(isNaN(a) || isNaN(b)){
 
-    throw SyntaxError("Sorry this is not allowed");
-}
+//     throw SyntaxError("Sorry this is not allowed");
+// }
 
-let sum = parseInt(a) + parseInt(b);
-
+// let sum = parseInt(a) + parseInt(b);
 
 function main(){
 
+       let sum = 10;
 try {
 
     console.log("The sum is",sum*x);
@@ -23,16 +23,17 @@ try {
     return false;
 
 } finally{
-
+      
     console.log("files are being closed and db connection is being closed");
 }
+}
+
+let c = main();5
+
+
 
 // instead of return statement in try and catch block 
 //  the finally statement still be execute
 // which is the use-case of finally block
-
-}
-
-let c = main();5
 
 

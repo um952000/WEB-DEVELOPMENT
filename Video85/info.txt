@@ -1,0 +1,13 @@
+npm init is used to initialize our backend part of the project and it will add package.json file in our project
+
+npm ki help se hum koi bhi package ko apne project me install kar sakte hai
+
+package ek piece of code hai jo kisi ne likha hai or use hum apne project me use kar sakte hai 
+
+packages life ko asaan banate hai
+
+Node modules folder holds the installed packages
+
+agar node modules delete ho jaye to hum use re-install kar sakte hai using  (npm install)
+
+npm  package.json ke andar present package ko re-install kar dega
