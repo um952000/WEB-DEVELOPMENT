@@ -1,3 +1,9 @@
+// This code will not be visible to the user here we
+//  will do the backend part like database connection 
+// server making and connection to frontend etc 
+
+// npm install slugify
+
 var slugify = require('slugify')
 
  let a = slugify('some string') // some-string

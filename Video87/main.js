@@ -3,9 +3,12 @@ const fs = require("fs")
 
 console.log("Starting")
 
-//fs.writeFileSync("harry.txt", "Harry is a good boy")  // synchronously creating and writing file
+//fs.writeFileSync("harry.txt", "Harry is a good boy")  // synchronously creating and writing in a file
+//firstly file will be written then next code will get executed
 
-fs.writeFile("harry2.txt", "harry is a good boy2",()=>{
+
+//asynchronously creating and writing in a file
+fs.writeFile("harry2.txt", "harry is a good boy2...1234567890",()=>{
 
       console.log("file creation done or it may exist already")
       fs.readFile("harry2.txt",(error,data)=>{
@@ -14,11 +17,10 @@ fs.writeFile("harry2.txt", "harry is a good boy2",()=>{
       })
 })
 
-// Adding data to a file
+// Adding data to a existing file
 fs.appendFile("harry.txt", " harry bro", (e,d)=>{
        console.log(d)
 })
 
 // where harry bro is the data
-
-console.log("Ending")
+console.log("Ending") 

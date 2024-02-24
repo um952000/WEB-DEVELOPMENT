@@ -8,7 +8,8 @@ export const c = 3 // named export
 const obj ={
 
      x:5,
-     y:8
+     y:8,
+     z:9
 }
 
 export default obj; 
